@@ -100,6 +100,7 @@ class s_list:
             return
         if pos == 0:
             self.head.next=self.head.next.next
+            self.s.next.prev = self.s
             self.s_length -= 1
             return
         q = self.head.next

@@ -92,7 +92,7 @@ class s_list:
 
     # 指定位置删除元素
     def remove(self,pos):
-        if self.s_length < pos or 0 > pos:
+        if self.s_length-1 < pos or 0 > pos:
             print("没有这个索引")
             return
         if self.s_length == 0:

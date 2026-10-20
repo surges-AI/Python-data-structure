@@ -78,6 +78,13 @@ class s_list:
         p.next = q.next
         q.next = p
 
+    #头部删除元素
+    def popleft(self):
+        if self.length()==0:
+            print("链表为空")
+            return
+        self.head=self.head.next
+
     #尾部删除元素
     def pop(self):
         if self.is_empty():
